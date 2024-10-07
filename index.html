@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Niveles</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #0073e6;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        header img {
+            width: 100px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        .portada {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .niveles {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            margin-top: 20px;
+        }
+        .nivel {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            width: 30%;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .nivel h3 {
+            color: #333;
+        }
+        .nivel ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .nivel ul li {
+            margin: 10px 0;
+        }
+        .nivel ul li a {
+            text-decoration: none;
+            color: #0073e6;
+            font-weight: bold;
+        }
+        .normal-image {
+            margin-top: 30px;
+        }
+        .normal-image img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="logo.jpg" alt="Logo de la empresa">
+    <h1>Bienvenido a nuestra plataforma</h1>
+</header>
+
+<img class="portada" src="portada.jpg" alt="Foto de portada">
+
+<div class="container">
+
+    <div class="niveles">
+        <div class="nivel">
+            <h3>Nivel Fácil</h3>
+            <ul>
+                <li><a href="#">Nivel 1</a></li>
+                <li><a href="#">Nivel 2</a></li>
+                <li><a href="#">Nivel 3</a></li>
+            </ul>
+        </div>
+        <div class="nivel">
+            <h3>Nivel Medio</h3>
+            <ul>
+                <li><a href="#">Nivel 1</a></li>
+                <li><a href="#">Nivel 2</a></li>
+                <li><a href="#">Nivel 3</a></li>
+            </ul>
+        </div>
+        <div class="nivel">
+            <h3>Nivel Difícil</h3>
+            <ul>
+                <li><a href="#">Nivel 1</a></li>
+                <li><a href="#">Nivel 2</a></li>
+                <li><a href="#">Nivel 3</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="normal-image">
+        <img src="imagen.jpg" alt="Imagen normal">
+    </div>
+
+</div>
+
+</body>
+</html>
