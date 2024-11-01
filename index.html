@@ -3,132 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página con Niveles</title>
+    <title>Proyectos de los Alumnos</title>
     <style>
+        /* Estilos generales */
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom right, #E0EAF2, #C7DCE5);
             margin: 0;
             padding: 0;
-        }
-        header {
-            
-            padding: 20px;
-            text-align: center;
-            color: black;
-        }
-        header img {
-            width: 100px;
-            height: auto;
-            display: block;
-            margin: 0 auto;
-        }
-        .portada {
-            width: 100%;
-            max-height: 300px;
-            object-fit: cover;
-        }
-        .container {
             display: flex;
-            flex-direction: column;
+            justify-content: center;
             align-items: center;
-            padding: 20px;
-        }
-        .niveles {
-            display: flex;
-            justify-content: space-around;
-            width: 100%;
-            margin-top: 20px;
-        }
-        .nivel {
-            background-color: #ffffff;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            padding: 15px;
-            width: 30%;
-            text-align: center;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        .nivel h3 {
+            flex-direction: column;
             color: #333;
         }
-        .nivel ul {
-            list-style-type: none;
-            padding: 0;
+
+        h1 {
+            font-size: 2.5em;
+            margin-top: 30px;
+            color: #0073e6;
+            text-align: center;
+            font-weight: 700;
         }
-        .nivel ul li {
-            margin: 10px 0;
+
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
         }
-        .nivel ul li a {
+
+        /* Tarjetas de proyectos */
+        .project-card {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            margin: 20px;
+            overflow: hidden;
+            position: relative;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .project-logo {
+            width: 80%;
+            height: 150px;
+            object-fit: contain;
+            margin: 20px auto 0;
+        }
+
+        .project-content {
+            padding: 15px;
+        }
+
+        .project-title {
+            font-size: 1.4em;
+            color: #333;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        .project-link {
             text-decoration: none;
             color: #0073e6;
             font-weight: bold;
-        }
-        .normal-image {
-            margin-top: 30px;
-        }
-        .normal-image img {
-            width: 100%;
-            max-width: 300px;
-            height: auto;
-            border-radius: 10px;
-        }
-        .formulario a {
-            text-decoration: none;
-            color: #ffffff;
-            background-color: #0073e6;
-            padding: 10px 20px;
+            border: 2px solid #0073e6;
+            padding: 8px 15px;
             border-radius: 5px;
-            font-weight: bold;
+            display: inline-block;
+            margin-top: 15px;
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
-        .formulario a:hover {
-            background-color: #005bb5;
+
+        .project-link:hover {
+            background-color: #0073e6;
+            color: #fff;
         }
     </style>
 </head>
 <body>
 
-<header>
-    <img src="avatar f.png" alt="Logo de la empresa">
-    <h1>Bienvenido a Algorithmics</h1>
-</header>
-
-
+<h1>Proyectos de los Alumnos</h1>
 
 <div class="container">
 
-    <div class="niveles">
-        <div class="nivel">
-            <h3>Nivel Fácil</h3>
-            <ul>
-                <li><a href="https://learn.alg.academy/lesson?lesson=9123&level=1&task=39326" target="_blank">Nivel 1</a></li>
-                <li><a href="https://learn.alg.academy/lesson?lesson=9222&level=1&task=39328" target="_blank">Nivel 2</a></li>
-                <li><a href="https://learn.alg.academy/lesson?lesson=9292&level=1&task=39485" target="_blank">Nivel 3</a></li>
-            </ul>
-        </div>
-        <div class="nivel">
-            <h3>Nivel Medio</h3>
-            <ul>
-                <li><a href="https://learn.alg.academy/lesson?lesson=12345&level=1&module=3&task=41822" target="_blank">Nivel 1</a></li>
-                <li><a href="https://learn.alg.academy/lesson?lesson=12505&level=1&module=3&task=41850" target="_blank">Nivel 2</a></li>
-                <li><a href="https://learn.alg.academy/lesson?lesson=12801&level=1&module=3&task=42021" target="_blank">Nivel 3</a></li>
-            </ul>
-        </div>
-        <div class="nivel">
-            <h3>Nivel Difícil</h3>
-            <ul>
-                <li><a href="https://learn.alg.academy/lesson?lesson=13868&level=1&module=5&task=31208" target="_blank">Nivel 1</a></li>
-                <li><a href="https://learn.alg.academy/lesson?lesson=14047&level=1&module=5&task=31688" target="_blank">Nivel 2</a></li>
-                <li><a href="https://learn.alg.academy/lesson?lesson=14150&level=1&module=5&task=32055" target="_blank">Nivel 3</a></li>
-            </ul>
+    <!-- Ejemplo de tarjeta de proyecto -->
+    <div class="project-card">
+        <img src="logo.jpg" alt="Logo de la empresa" class="project-logo">
+        <div class="project-content">
+            <h2 class="project-title">Proyecto 1</h2>
+            <a href="https://link-al-proyecto.com" class="project-link" target="_blank">Ver Proyecto</a>
         </div>
     </div>
-<div class="formulario">
-        <h2>¡Sección de preguntas!</h2>
-        <p>Haz clic en el siguiente enlace para completar el cuestionario, una vez le sea indicado:</p>
-        <a href="https://forms.gle/1YWgi4R4AhdJeVnn9" target="_blank">Abrir cuestionario</a>
+
+    <!-- Tarjeta de proyecto repetible -->
+    <div class="project-card">
+        <img src="logo.jpg" alt="Logo de la empresa" class="project-logo">
+        <div class="project-content">
+            <h2 class="project-title">Proyecto 2</h2>
+            <a href="https://link-al-proyecto.com" class="project-link" target="_blank">Ver Proyecto</a>
+        </div>
     </div>
- 
+
+    <!-- Agrega más tarjetas de proyectos según sea necesario -->
 
 </div>
 
